@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Cookie-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller backgroundImage="Cookie" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HelloAppleWatch_WatchKitApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="0.90000000000000002" heightAdjustment="1" alignment="center" verticalAlignment="bottom" title="Button" id="jZu-TU-Nk9">
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                            <connections>
+                                <action selector="newFortune" destination="AgC-eL-Hgc" id="4IV-gm-Fsd"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="reloadButton" destination="jZu-TU-Nk9" id="KYW-3G-e67"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cookie" width="136" height="120"/>
+    </resources>
+</document>
